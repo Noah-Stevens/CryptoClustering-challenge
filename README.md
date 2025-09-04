@@ -1,4 +1,4 @@
-# Crypto Clustering Challenge — Crypto Market Analysis
+# Unsupervised Machine Learning — Crypto Market Analysis
 
 This project applies unsupervised learning techniques to cryptocurrency market data.  
 It uses clustering algorithms to identify patterns among cryptocurrencies and visualizes relationships in reduced dimensions.
