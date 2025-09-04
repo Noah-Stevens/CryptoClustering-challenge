@@ -1,16 +1,59 @@
-# CryptoClustering-challenge
-Module 19 Unsupervised Learning Challenge
+# Crypto Clustering Challenge — Crypto Market Analysis
 
-All of work is in the starter code folder.
+This project applies unsupervised learning techniques to cryptocurrency market data.  
+It uses clustering algorithms to identify patterns among cryptocurrencies and visualizes relationships in reduced dimensions.
 
-The assignment contains three parts:
+## Repository Contents
+- Crypto_Clustering.ipynb — Main notebook for preprocessing, clustering, and visualization
+- Resources/crypto_market_data.csv — Dataset of crypto market prices
+- LICENSE — GPL-3.0 License
 
-  1. Scale the data
-  2. Create elbow plots to determine the optimal value of k
-  3. Create scatter plots of clusters using the optimal k value
+## Project Overview
+### Data Preparation
+- Load cryptocurrency market dataset
+- Normalize price data using StandardScaler
+- Prepare data for clustering and dimensionality reduction
 
-This showcases my ability to create elbow plots to determine how my scatter plots are to be made, specifically with what number of cluster groups are optimal. Additionally, the file provides my knowledge on how full scaled data and PCA data differentiate.
+### K-Means Clustering
+- Apply K-Means to identify groups of similar cryptocurrencies
+- Determine optimal number of clusters using the Elbow method
+- Visualize clusters in feature space
 
-The composite plot section for differentiation exhibits the ability to differentiate scaled and PCA data by the shown comparison of the elbow and scatter plots.
+### PCA Dimensionality Reduction
+- Reduce features using Principal Component Analysis (PCA)
+- Compare clustering results between original scaled data and PCA-reduced data
+- Visualize PCA-transformed clusters
 
-Thanks for reading! :))
+### Analysis
+- Compare cluster assignments from full feature space vs PCA
+- Evaluate impact of dimensionality reduction on clustering accuracy
+- Generate scatterplots for clear visualization of market groupings
+
+## Tools & Libraries
+- Pandas — data wrangling
+- scikit-learn — clustering (K-Means) and PCA
+- Matplotlib / hvPlot — visualization
+- StandardScaler — feature normalization
+
+## Quick Start
+1. Clone the repo
+   ```bash
+   git clone https://github.com/Noah-Stevens/CryptoClustering-challenge.git
+   cd CryptoClustering-challenge
+   ```
+
+2. Install dependencies
+   ```bash
+   pip install pandas scikit-learn matplotlib hvplot
+   ```
+
+3. Run notebook
+   - Open `Crypto_Clustering.ipynb` in Jupyter Notebook or JupyterLab
+   - Execute cells to reproduce analysis
+
+## License
+GPL-3.0 License. See LICENSE file.
+
+## Author
+Noah Stevens  
+[LinkedIn](https://www.linkedin.com/in/noah-stevens-2a47a3331/)
